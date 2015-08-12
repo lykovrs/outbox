@@ -1,0 +1,6 @@
+.email(ng-repeat='email in emails')
+    a(href='#/outbox/{{$index}}')
+        span.from {{ email.from }}
+        span.subject {{ email.subject }}
+        span.date {{ email.datetime | date }}
+        
